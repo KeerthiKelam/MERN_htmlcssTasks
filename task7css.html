@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body{
+            background-color: rgb(204, 10, 107);
+        }
+        table{
+            padding: 3em 5em;
+            background-color: rgb(138, 12, 71);
+        }
+        tr, th, td{
+            padding: 5px;
+        }
+        th, td{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+<html>
+    <body>
+        <form>
+            <center>
+            <table style="text-align: left;">
+                <tr>
+                    <th>Name:</th>
+                    <td><input type="text" name="name" placeholder="your name"></td>
+                </tr>
+
+                <tr>
+                    <th>Email:</th>
+                    <td><input type="email" name="email" placeholder="your email"></td>
+                </tr>
+                
+                <tr>
+                    <th>Password:</th>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                
+                <tr>
+                    <th>Phone Number:</th>
+                    <td><input type="text" name="phonenumber"></td>
+                </tr>
+
+                <tr>
+                    <th>Gender: </th>
+                    <td>
+                        Male:<input type="radio" name="gender" value="male">
+                        Female:<input type="radio" name="gender" value="female">
+                        Other:<input type="radio" name="gender" value="other">
+                    </td>
+                </tr>
+            
+                <tr>
+                    <th>language</th>
+                    <td>
+                    <select name="lang" id="lang">
+                        <option value="choose">Select language</option>
+                        <option value="telugu">Telugu</option>
+                        <option value="english">English</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="tamil">Tamil</option>
+                        <option value="malayalam">Malayalam</option>
+                        <option value="kannada">Kannada</option>
+                    </select>
+                    </td>
+                </tr>
+                                
+                <tr>
+                    <th>Zip Code:</th>
+                    <td><input type="number" name="zipcode"></td>
+                </tr>
+
+                <tr>
+                    <th>About:</th>
+                    <td><textarea name="about" rows="3" placeholder="Write about yourself..."></textarea></td>
+                </tr>
+
+                <tr>
+                    <th colspan="2" style=""><button type="submit" style="width: 25em; height: 2.5em; font-family: Arial, Helvetica, sans-serif; border-radius: 4px; border-color: white;">Register</button></th>
+                </tr>
+
+            </table>
+            </center>
+        </form>
+    </body>
+</html>
